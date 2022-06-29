@@ -31,3 +31,12 @@ install:
   - gem install dpl --pre
   - dpl releases --token $GITHUB_TOKEN --file "bin/advbot-0.1-armeabi-v7a-debug.apk" --tag_name "v.0.1"
   - echo "TODO 2"
+
+  <!-- Minimize infrastructure debug logs -->
+  <logger name="com.github.dozermapper" level="INFO"/>
+  <logger name="org.flywaydb" level="INFO"/>
+  <logger name="org.springframework" level="INFO"/>
+  <logger name="org.hibernate" level="INFO"/>
+  <logger name="kafka" level="WARN"/>
+  <logger name="org.apache" level="INFO"/>
+  <logger name="com.zaxxer.hikari" level="INFO"/>
