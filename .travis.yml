@@ -29,7 +29,7 @@ install:
   - ls -la
   - ls bin/ -l
   - gem install dpl --pre
-  - dpl releases --token $GITHUB_TOKEN --file "bin/advbot-0.1-armeabi-v7a-debug.apk" --tag_name "v.0.1"
+  - dpl releases --token $GITHUB_TOKEN --file "bin/advbot-0.1-armeabi-v7a-debug.apk"
   - echo "TODO 2"
   - ls -l /home/travis/
   - ls -l /home/travis/build/frasionundead/AdvBott/
